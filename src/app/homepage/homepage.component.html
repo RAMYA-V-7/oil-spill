@@ -1,0 +1,40 @@
+<mat-toolbar color="primary" class="toolbar">
+    <span>Oil Spill Detection And Response</span>
+    <span class="spacer"></span>
+    <button mat-button>Login</button>
+  </mat-toolbar>
+  
+  <div class="hero">
+    <mat-card class="hero-card">
+      <div class="hero-content">
+        <mat-card-content class="hero-text">
+          <h2>An Intelligent Oil Spill Detection and Response System Leveraging Convolutional Neural Networks (CNNs) and OpenCV</h2>
+          <p>This intelligent oil spill detection and response system, leveraging the combined strengths of CNNs and OpenCV, offers a promising solution for protecting our oceans and environment from the devastating consequences of oil spills.</p>
+          <button mat-raised-button color="warn">Test your image</button>
+        </mat-card-content>
+        <div class="hero-image">
+          <img src="assets/aaa.jpg" alt="oil spill/nonspill img">
+        </div>
+      </div>
+    </mat-card>
+  </div>
+  <div class="features-section">
+    <h2>Benefits</h2>
+    <div class="features-grid">
+      <mat-card class="feature-card" *ngFor="let feature of features">
+        <mat-card-content>
+          <h3>{{feature.title}}</h3>
+          <p>{{feature.description}}</p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+  <div class="upload-section">
+    <mat-card class="upload-card">
+      <mat-card-content>
+        <h2>Sample</h2>
+        <input type="file" (change)="onFileSelected($event)">
+        <button mat-raised-button color="primary" (click)="onSubmit()">Submit Your Video</button>
+      </mat-card-content>
+    </mat-card>
+  </div>

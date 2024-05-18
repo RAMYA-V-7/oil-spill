@@ -1,0 +1,118 @@
+/* General Styles */
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  }
+  .custom-button {
+    background-color: #060c5c; 
+    color: rgb(255, 255, 255);
+  } 
+  
+    &:hover {
+      background-color: #240054;
+    }
+  .toolbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #000000;
+  }
+  
+  .spacer {
+    flex: 1 1 auto;
+  }
+  
+  /* Hero Section */
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    background-color: #090925;
+    padding: 20px;
+  }
+  
+  .hero-card {
+    display: flex;
+    flex-direction: row;
+    max-width: 80%;
+    width: 200%;
+  }
+  
+  .hero-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .hero-text {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .hero-image {
+    flex: 1;
+  }
+  
+  .hero-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+/* Features Section */
+.features-section {
+    padding: 40px 20px;
+    background-color: #ffffff;
+    text-align: center;
+  }
+  
+  .features-section h2 {
+    margin-bottom: 20px;
+  }
+  
+  .features-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+   
+  }
+  
+  .feature-card {
+    margin: 10px;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    background-color: #c9c9c9;
+  }
+  
+  .feature-card h3 {
+    margin-top: 0;
+  }
+  
+  /* Upload Section */
+.upload-section {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .upload-card {
+    max-width: 500px;
+    margin: auto;
+    background-color: #b0aed1;
+    box-shadow: 0px 3px 6px rgba(70, 64, 64, 0.16);
+  }
+  
+  .upload-card mat-card-content {
+    padding: 20px;
+  }
+  
+  .upload-card h2 {
+    margin-bottom: 20px;
+  }
+  
+  .upload-card input[type="file"] {
+    margin-bottom: 20px;
+  }
+  
+  .upload-card button {
+    margin-top: 20px;
+  }
